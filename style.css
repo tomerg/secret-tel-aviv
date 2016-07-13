@@ -3,6 +3,8 @@
 body {
   margin: 0;
   background-color: #ddd;
+  overflow-x: hidden;
+  max-width: 100%;
 }
 
 nav li {
@@ -54,6 +56,10 @@ section {
 }
 
 /* Class styles */
+
+.row {
+  margin-right: 1em;
+}
 
 .column {
   float: left;
@@ -109,7 +115,6 @@ section {
 .inner-box {
   background-color: #FFF;
   margin: 0 1.5em;
-
 }
 
 .section-title {
@@ -137,11 +142,12 @@ section {
 @media (max-width: 700px) {
   .column-70 {
     width: 100%;
+    height: auto;
   }
 
   .column-30 {
-    margin-top: 1em;
     width: 100%;
+    margin-top: 1em;
   }
 }
 
